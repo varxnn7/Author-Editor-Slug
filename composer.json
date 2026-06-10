@@ -1,0 +1,21 @@
+{
+    "name": "edited/edit-author-slug",
+    "description": "Edit Author Slug - A WordPress plugin",
+    "require-dev": {
+        "php-parallel-lint/php-parallel-lint": "^1.3",
+        "wp-coding-standards/wpcs": "^3.0",
+        "phpcompatibility/phpcompatibility-wp": "^2.1",
+        "sirbrillig/phpcs-variable-analysis": "^2.11"
+    },
+    "scripts": {
+        "lint": "parallel-lint --exclude vendor,node_modules .",
+        "phpcs": "phpcs",
+        "phpcbf": "phpcbf",
+        "sniff": "phpcs --standard=phpcs.xml ."
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
